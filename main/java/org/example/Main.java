@@ -1,18 +1,43 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
+
+        //variable declarations
+        Scanner terminalInput = new Scanner(System.in);
+        int choice;
 
         System.out.println("Calculator");
+        System.out.println("Addition        + : 1");
+        System.out.println("Subtraction     - : 2");
+        System.out.println("Multiplication  * : 3");
+        System.out.println("Division        / : 4");
+        System.out.println("Exit: 5");
+        System.out.println("Choose one of the following operation: ");
+        choice = terminalInput.nextInt();
 
-
-
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        //The following code checks user input and calls correct method
+        if (choice == 1)
+        {
+            System.out.println("Addition: ");
+        }
+        else if  (choice == 2)
+        {
+            System.out.println("Subtraction: ");
+        }
+        else if (choice == 3){
+            System.out.println("Multiplication: ");
+        }
+        else if (choice == 4)
+         {
+             System.out.println("Division: ");
+         }
+         else
+         {
+             System.out.println("Closing calculator! ");
+         }
         }
     }
-}
