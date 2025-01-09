@@ -28,6 +28,7 @@ public class Main {
             subtraction();
         } else if (choice == 3) {
             System.out.println("Multiplication: ");
+            multiplication();
         } else if (choice == 4) {
             System.out.println("Division: ");
         } else {
@@ -51,6 +52,15 @@ public class Main {
         int num1 = terminalInput.nextInt();
         int num2 = terminalInput.nextInt();
         System.out.println("Result: " +(num1-num2));
+    }
+
+    // Method for multiplication takes two integer and multiply
+    static void multiplication(){
+        Scanner terminalInput = new Scanner(System.in); //Check if it is possible to declare global so that we can remove this line of code
+        System.out.println("Enter two numbers");
+        int num1 = terminalInput.nextInt();
+        int num2 = terminalInput.nextInt();
+        System.out.println("Result: " +(num1*num2));
     }
 
 
