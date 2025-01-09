@@ -31,6 +31,7 @@ public class Main {
             multiplication();
         } else if (choice == 4) {
             System.out.println("Division: ");
+            division();
         } else {
             System.out.println("Closing calculator! ");
         }
@@ -63,6 +64,14 @@ public class Main {
         System.out.println("Result: " +(num1*num2));
     }
 
+    // Method for division takes two integer and devides
+    static void division(){
+        Scanner terminalInput = new Scanner(System.in); //Check if it is possible to declare global so that we can remove this line of code
+        System.out.println("Enter two numbers");
+        int num1 = terminalInput.nextInt();
+        int num2 = terminalInput.nextInt();
+        System.out.println("Result: " +(num1/num2));
+    }
 
 
 
