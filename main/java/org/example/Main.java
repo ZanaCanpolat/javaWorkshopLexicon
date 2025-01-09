@@ -10,6 +10,7 @@ public class Main {
         Scanner terminalInput = new Scanner(System.in);
         int choice;
 
+        // Printing user choice
         System.out.println("Calculator");
         System.out.println("Addition        + : 1");
         System.out.println("Subtraction     - : 2");
@@ -23,6 +24,7 @@ public class Main {
         if (choice == 1)
         {
             System.out.println("Addition: ");
+            addition();
         }
         else if  (choice == 2)
         {
@@ -40,4 +42,16 @@ public class Main {
              System.out.println("Closing calculator! ");
          }
         }
+
+    static void addition(){
+        Scanner terminalInput = new Scanner(System.in);
+        System.out.println("Enter two numbers");
+        int num1 = terminalInput.nextInt();
+        int num2 = terminalInput.nextInt();
+        System.out.println("Result: " +(num1+num2));
     }
+
+    }
+
+
+    
